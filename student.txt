@@ -1,0 +1,4 @@
+name :ofiq
+roll no :1
+dept :AI&DS
+score :80
