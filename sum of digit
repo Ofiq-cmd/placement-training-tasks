@@ -1,0 +1,7 @@
+n = int(input("enter number :"))
+tol = 0
+while n > 0:
+    a = n % 10    # a=2 if n=12
+    tol += a
+    n = n // 10
+print(tol)

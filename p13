@@ -1,0 +1,14 @@
+available_balance = 2500
+while True :
+    condition = int(input("choose your option you want to: 1. Check Balance 2. Deposit 3. Exit: "))
+    if condition == 1:
+        print("Your available balance is:", available_balance)
+    elif condition == 2:
+        deposit_amount = int(input("Enter the amount you want to deposit: "))
+        available_balance += deposit_amount
+        print("Your updated balance is:", available_balance)
+    elif condition == 3:
+        print("Thank you for using our service.")
+        break
+    else:
+        print("Invalid option. Please try again.")

@@ -1,0 +1,34 @@
+available = {"laptop":70000,"accessories":400,"hard disk":2000,"mouse":500,"keyboard":1000}
+print("Available items and their prices:")
+for item, price in available.items():
+    print(f"{item}: ${price}")
+cart = []
+total = 0
+items = list(input("Enter the items you want to buy : ").split(","))
+while True:
+    if len(items) > 0:
+        for item in items:
+            if item in available:
+                cart.append(item)
+                print(f"{item} added to cart.")
+            else:
+                print(f"{item} is not available.")
+    ask = int(input("1. add another item, 2. remove item, 3. checkout, 4. exit: "))
+    if ask == 1:
+        items = list(input("Enter the items you want to buy : ").split(","))
+    elif ask == 2:
+        remove_item = input("Enter the item you want to remove: ")
+        if remove_item in cart:
+            cart.remove(remove_item)
+            print(f"{remove_item} removed from cart.")
+        else:
+            print(f"{remove_item} is not in the cart.")
+    elif ask == 3:
+        for item in cart:
+            total += available[item]
+        print(f"total amount: ${total}")
+        cart.clear()
+    elif ask == 4:
+        print("Thank you for shopping...")
+        break
+        

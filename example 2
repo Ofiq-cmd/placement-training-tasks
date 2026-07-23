@@ -1,0 +1,10 @@
+n = int(input("Enter a num: "))
+if n%3==0 and n%5==0:
+    print("AlphaBeta")
+elif n%3==0:
+    print("Alpha")
+elif n%5==0:
+    print("Beta")
+else:
+    print("sum of digits of n")
+    

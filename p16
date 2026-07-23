@@ -1,0 +1,25 @@
+even = []
+odd = []
+prime = []
+not_prime = []
+for i in range(100,201):
+    if i%2 == 0:
+        even.append(i) 
+    else:
+        odd.append(i)
+
+    for j in range(2, i):
+        if i % j == 0:
+            not_prime.append(i)
+            break
+    else:
+        prime.append(i)
+        
+print(f"even numbers: {even}\n")
+print(f"odd numbers: {odd}\n")
+print(f"prime numbers: {prime}\n")
+print(f"not prime numbers: {not_prime}\n")
+print(f"total even numbers: {len(even)}")
+print(f"total odd numbers: {len(odd)}")
+print(f"total prime numbers: {len(prime)}")
+print(f"total not prime numbers: {len(not_prime)}")

@@ -1,0 +1,3 @@
+print("fill your details in the order of name,Age,department,year, email, phone number, address")
+list = list(input("enter your details (comma separated) : ").split(","))
+print(f"Name: {list[0]}\nAge: {list[1]}\nDepartment: {list[2]}\nYear: {list[3]}\nEmail: {list[4]}\nPhone: {list[5]}\nAddress: {list[6]}")

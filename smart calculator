@@ -1,0 +1,13 @@
+a = float(input("enter a num :"))
+b = float(input("enter another num :"))
+op = input("choose any of the opertion (*,+,-,/) ")
+if op == "*":
+    print(f"multi of {a} and {b} is",a*b)
+elif op == "+":
+    print(f"sum of {a} and {b} is",a+b) 
+elif op == "-":
+    print(f"sub of {a} and {b} is",a-b) 
+elif op == "/":
+    print(f"div of {a} and {b} is",a/b)
+else:
+    print("out of range")

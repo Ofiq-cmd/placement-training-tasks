@@ -1,0 +1,8 @@
+attendance = int(input("enter attendance % :"))
+medical_proof = input("medical proof is there ? ")
+if attendance >= 75:
+    print("Eligible")
+elif medical_proof == "yes":
+    print("Eligible with Medical Proof")
+else:
+    print("Not Eligible")

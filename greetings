@@ -1,0 +1,9 @@
+hour = int(input("enter hour :"))
+if hour < int(5) or hour >= 21:
+    print("Good Night")
+elif hour >= int(5) and hour < int(12):
+    print("Good Morning")
+elif hour >= int(12) and hour < int(17):
+    print("Good Afternoon")
+elif hour >= int(17) and hour < int(21):
+    print("Good Evening")

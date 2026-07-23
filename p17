@@ -1,0 +1,9 @@
+Tuple = ('a','b','c','d','e','f','g','f','g','h','i','j')
+seats ={'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'f':8,'g':9,'h':10,'i':11,'j':12}
+attend =tuple(input("enter the persons name present(comma separated) :").split(','))
+for person in Tuple:
+    if person in attend:
+        print(f"{person} in seat {seats[person]} : Present")
+    else:
+        print(f"{person} in seat {seats[person]} : Absent")
+

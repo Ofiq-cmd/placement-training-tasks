@@ -1,0 +1,5 @@
+a = input("Enter a word :")
+b = ['a','e','i','o','u']
+for i in range(len(b)):
+    if b[i] in a :
+        print(f" {a} has {b[i]} vowel repeated {a.count(b[i])} times.")

@@ -1,0 +1,19 @@
+#count how many highest times a digit appears in a numbe
+n = int(input())
+max_digit = -1
+max_count = -1
+while n > 0:
+    digit = n % 10
+    count = 0
+    temp = n
+    while temp > 0:
+        if temp % 10 == digit:
+            count += 1
+        temp //= 10
+    if count > max_count:
+        max_count = count
+        max_digit = digit
+        
+    n //= 10
+print(max_digit)
+print(max_count)

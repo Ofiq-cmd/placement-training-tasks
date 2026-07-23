@@ -1,0 +1,14 @@
+n = int(input("enter num :"))
+res = ""
+while n >0:
+    a = n%10
+    res = str(res)+ str(a)
+    n = n//10
+print(res )
+
+if int(res) > n:
+    print("up")
+elif int(res) < n:
+    print("down")
+else:
+    print("palindrome")
